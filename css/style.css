@@ -1,0 +1,13 @@
+/* css color variables */
+:root {
+  --sidebar-bg-color: #29b6bf;
+  --sidebar-logo-bg-color: #08192a;
+  --title-bg-color: #0d8fa9;
+  --title-edge-color: #0e1227;
+  --skills-animated-color: #1ca7b5;
+  --text-highlights-color: #3d9eb2;
+  --text-highlights-color-1: #01030c;
+  --text-primary-color: #fff;
+  --text-secondary-color: #2c2b2b;
+}
+
