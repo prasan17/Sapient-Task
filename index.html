@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Sapient Task</title>
+  <!-- internal css links -->
+  <link rel="stylesheet" href="css/style.css">
+  <link href="./fav_icon.png" rel="shortcut icon">
+  <title>SpaceX Launch Program</title>
 </head>
+
 <body>
-  
+  <div class="container">
+    <h1 class="container__heading">SpaceX Launch Programs</h1>
+    <section class="container_list">
+      <div class="container_list--filters">
+        <h2>Filters</h2>
+        <div class="filter">
+          <div class="filter__header">Launch Year</div>
+          <div class="filter__value">
+            <button value="2006" class="launch-year" id="2006Launch Year">2006</button>
+            <button value="2007" class="launch-year" id="2007Launch Year">2007</button>
+            <button value="2008" class="launch-year" id="2008Launch Year">2008</button>
+            <button value="2009" class="launch-year" id="2009Launch Year">2009</button>
+            <button value="2010" class="launch-year" id="2010Launch Year">2010</button>
+            <button value="2011" class="launch-year" id="2011Launch Year">2011</button>
+            <button value="2012" class="launch-year" id="2012Launch Year">2012</button>
+            <button value="2013" class="launch-year" id="2013Launch Year">2013</button>
+            <button value="2014" class="launch-year" id="2014Launch Year">2014</button>
+            <button value="2015" class="launch-year" id="2015Launch Year">2015</button>
+            <button value="2016" class="launch-year" id="2016Launch Year">2016</button>
+            <button value="2017" class="launch-year" id="2017Launch Year">2017</button>
+            <button value="2018" class="launch-year" id="2018Launch Year">2018</button>
+            <button value="2019" class="launch-year" id="2019Launch Year">2019</button>
+            <button value="2020" class="launch-year" id="2020Launch Year">2020</button>
+          </div>
+        </div>
+        <div class="filter">
+          <div class="filter__header">Successful Launch</div>
+          <div class="filter__value"><button value="True" class="" id="TrueSuccessful Launch">True</button><button
+              value="False" class="" id="FalseSuccessful Launch">False</button></div>
+        </div>
+        <div class="filter">
+          <div class="filter__header">Successful Landing</div>
+          <div class="filter__value"><button value="True" class="" id="TrueSuccessful Landing">True</button><button
+              value="False" class="" id="FalseSuccessful Landing">False</button></div>
+        </div>
+      </div>
+      <!-- <div class="loading">
+        <div class="spinner-border" role="status" id="loading">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div> -->
+      <div class="container__list--name" id="container__list--name">
+
+      </div>
+    </section>
+    <h1 class="developBy">Developed By:
+      Prasan Kumar
+    </h1>
+  </div>
 </body>
+<script src="./js/main.js"></script>
+
 </html>
