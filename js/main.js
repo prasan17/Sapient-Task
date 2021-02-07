@@ -20,8 +20,9 @@ fetch(api_url)
 // function to show the updated list of data
 function showListSpaceXData(updatedValue) {
     let updateListData = [];
-    for (let item of updatedValue) {
-        updateListData += `
+    if (updatedValue.length > 0) {
+        for (let item of updatedValue) {
+            updateListData += `
         <div class="launchCard">
         <img src=${item.links.mission_patch_small} class="launchImage" alt="Space X"></img>
         <div class="launchName">${item.mission_name} # ${item.flight_number}</div>
@@ -30,6 +31,9 @@ function showListSpaceXData(updatedValue) {
         <div class="success"><span>Successful Launch:</span> ${item.launch_success}</div>
         <div class="fail"><span>Successful Landing:</span> Not Available</div>
         </div>`;
+        }
+    } else {
+        updateListData += `<div class="fail">No Data Available</div>`;
     }
     // Appending to the required block
     document.getElementById("container__list--name").innerHTML = updateListData;
@@ -48,8 +52,8 @@ function filterData() {
             for (let item of listSpaceXElement) {
                 if (yearID.target.value == item.launch_year) {
                     filteredData.push(item);
-                    showListSpaceXData(filteredData);
                 }
+                showListSpaceXData(filteredData);
             }
         });
     });
