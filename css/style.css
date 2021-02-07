@@ -159,4 +159,8 @@ body {
   .container__list--name .launchCard .launchImage {
     width: 100%;
   }
+  .no_data {
+    padding: 20px;
+    text-align: center;
+  }
 }

@@ -33,7 +33,7 @@ function showListSpaceXData(updatedValue) {
         </div>`;
         }
     } else {
-        updateListData += `<div class="fail">No Data Available</div>`;
+        updateListData += `<div class="no_data">No Data Available</div>`;
     }
     // Appending to the required block
     document.getElementById("container__list--name").innerHTML = updateListData;
